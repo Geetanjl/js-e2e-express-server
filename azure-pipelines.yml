@@ -19,12 +19,12 @@ steps:
   displayName: npm install
   inputs:
     command: 'install'
-    workingDir: 'package.json'
+    workingDir: './'
 - task: Npm@1
   displayName: npm run and build
   inputs:
     command: 'custom'
-    workingDir: 'package.json'
+    workingDir: './'
     customCommand: 'run build'
 
 
